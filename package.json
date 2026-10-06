@@ -8,7 +8,8 @@
     "ios": "expo run:ios",
     "build:apk": "npx eas-cli build -p android --profile preview",
     "build:apk:prod": "npx eas-cli build -p android --profile production",
-    "build:apk:local": "cd android && .\\gradlew assembleRelease"
+    "build:apk:local": "cd android && .\\gradlew assembleRelease",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "expo": "^57.0.0",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "^19.2.0",
+    "patch-package": "^8.0.1",
     "typescript": "^5.3.3"
   },
   "private": true
