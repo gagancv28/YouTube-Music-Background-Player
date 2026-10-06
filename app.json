@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
     "android": {
       "package": "com.ytmusicbackgroundplayer",
       "permissions": [
