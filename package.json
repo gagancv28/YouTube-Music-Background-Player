@@ -5,7 +5,10 @@
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
-    "ios": "expo run:ios"
+    "ios": "expo run:ios",
+    "build:apk": "npx eas-cli build -p android --profile preview",
+    "build:apk:prod": "npx eas-cli build -p android --profile production",
+    "build:apk:local": "cd android && .\\gradlew assembleRelease"
   },
   "dependencies": {
     "expo": "^57.0.0",

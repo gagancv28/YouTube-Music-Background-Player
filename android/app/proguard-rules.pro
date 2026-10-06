@@ -12,3 +12,14 @@
 -keep class com.facebook.react.turbomodule.** { *; }
 
 # Add any project specific keep options here:
+
+# react-native-track-player & KotlinAudio
+-keep class com.doublesymmetry.** { *; }
+-dontwarn com.doublesymmetry.**
+-dontwarn com.google.android.exoplayer2.**
+
+# react-native-webview
+-keep public class com.reactnativecommunity.webview.** { *; }
+-keepclassmembers class * extends com.facebook.react.uimanager.ViewManager {
+  public <init>(...);
+}

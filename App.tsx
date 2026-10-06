@@ -209,7 +209,6 @@ export default function App() {
         // Background Media Playback & Audio Focus Configurations
         allowsInlineMediaPlayback={true}
         mediaPlaybackRequiresUserAction={false}
-        allowsBackgroundMediaPlayback={true}
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
         domStorageEnabled={true}
@@ -253,7 +252,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
   },
   loadingOverlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     backgroundColor: '#000000',
     justifyContent: 'center',
     alignItems: 'center',
